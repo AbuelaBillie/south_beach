@@ -1,0 +1,33 @@
+/*FORMULARIO RESERVAS*/
+.booking-form{
+    width: 88%;
+    margin-top: 2rem;
+}
+.booking-form input{
+    font-size: 1rem;
+    padding: .3rem;
+    display: block; 
+    width: 100%;  
+    margin-bottom: 1rem;
+}
+.booking-form label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+.booking-form select{
+    font-size: 1rem;
+    min-width: 4rem;
+    width: 100%;
+    padding: .3rem;
+    margin-bottom: 1rem;
+}
+.doble-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.select-pack{
+   -bn ñ
+}
+/*END FORMULARIO RESERVAS*/

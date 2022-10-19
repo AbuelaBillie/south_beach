@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/reservas.css">
+    <script src="../scripts/roomSlider.js"></script>
+    <title>South Beach Hotel - Reservas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div>
+                <a class="logo" href=""><img src="../resources/logo.png" alt="logo south beach"></a>
+            </div>
+            <img class="burger" src="../resources/burguer-menu.png" alt="menu">
+        </nav>
+    </header>
+
+    <body>
+        <div class="info">
+            <h2>RESERVA DE HABITACIÓN</h2>
+            <h3>completa el fomulario</h3>
+            <form class="booking-form">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+                <label for="surname">Apellido</label>
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico">
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="tel" id="tel" placeholder="Ingrese su número de teléfono">
+                <div class="doble-select">
+                    <div class="select-pack">
+                        <label for="cant_adulto">Adultos</label>
+                        <select name="cant_adulto" id="cant_adulto">
+                            <option value="0">0</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="select-pack">
+                        <label for="cant_kids">Niños</label>
+                        <select name="cant_kids" id="cant_kids">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="room">Habitación</label>
+                <select name="room" id="room">
+                    <option value="1">Habitacion 1</option>
+                    <option value="2">Habitacion 2</option>
+                </select>
+                <label for="check-in-date">Fecha de llegada</label>
+                <input type="date" name="check-in-date" id="check-in-date">
+                <label for="check-out-date">Fecha de partida</label>
+                <input type="date" name="check-out-date" id="check-out-date">
+                <label for="comments">Comentarios</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+        <div class="cards">
+            <div class="card-container">
+                <div class="card">
+                    <div id="camas-0" class="card-img">
+                        <button id="left-btn-0" class="arrow-left" type="button"></button>
+                        <button id="right-btn-0" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>doble standar con vista al jardín</h3>
+                    <p>Desde $8,000 por noche</p>
+                    <p>Capacidad para 2 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-1" class="card-img">
+                        <button id="left-btn-1" class="arrow-left" type="button"></button>
+                        <button id="right-btn-1" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>doble standar con vista al mar</h3>
+                    <p>Desde $9,000 por noche</p>
+                    <p>Capacidad para 2 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-2" class="card-img">
+                        <button id="left-btn-2" class="arrow-left" type="button"></button>
+                        <button id="right-btn-2" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>doble especial con balcón al mar</h3>
+                    <p>Desde $10,500 por noche</p>
+                    <p>Capacidad para 2 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-3" class="card-img">
+                        <button id="left-btn-3" class="arrow-left" type="button"></button>
+                        <button id="right-btn-3" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>Triple matrimonial con vista al jardín</h3>
+                    <p>Desde $13,000 por noche</p>
+                    <p>Capacidad para 3 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-4" class="card-img">
+                        <button id="left-btn-4" class="arrow-left" type="button"></button>
+                        <button id="right-btn-4" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>Triple matrimonial camas individuales</h3>
+                    <p>Desde $13,000 por noche</p>
+                    <p>Capacidad para 3 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-5" class="card-img">
+                        <button id="left-btn-5" class="arrow-left" type="button"></button>
+                        <button id="right-btn-5" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>Suite especial</h3>
+                    <p>Desde $15,000 por noche</p>
+                    <p>Capacidad para 4 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-6" class="card-img">
+                        <button id="left-btn-6" class="arrow-left" type="button"></button>
+                        <button id="right-btn-6" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>Combinada cuádruple con vista al jardín</h3>
+                    <p>Desde $15,000 por noche</p>
+                    <p>Capacidad para 5 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+                <div class="card">
+                    <div id="camas-7" class="card-img">
+                        <button id="left-btn-7" class="arrow-left" type="button"></button>
+                        <button id="right-btn-7" class="arrow-right" type="button"></button>
+                    </div>
+                    <h3>Combinada cuádruple con vista al mar</h3>
+                    <p>Desde $16,500 por noche</p>
+                    <p>Capacidad para 5 personas</p>
+                    <a href="">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="info-footer">
+            <span>+54 2257 54-8873</span>
+            <a href="mailto:reservas@southbeach.com.ar?Subject=información">reservas@southbeach.com.ar</a>
+            <div class="redes">
+                <a class="red"
+                    href="https://www.tripadvisor.com.ar/Hotel_Review-g312756-d1672322-Reviews-South_Beach_Hotel-San_Bernardo_Province_of_Buenos_Aires_Central_Argentina.html"
+                    target="_blank">
+                    <img src="../resources/tripadvisor.png" alt="logo tripadvisor">
+                </a>
+                <a class="red"
+                    href="https://almundo.com.ar/hoteles/detalle/hotel-south-beach-san-bernardo-537350234H?gclid=CjwKCAjw-rOaBhA9EiwAUkLV4oYzCVODfEylMIWYjobqczfDlFnqlRilIFEfY2U85vKT2bK1KN-fRxoC3VQQAvD_BwE"
+                    target="_blank">
+                    <img src="../resources/almundo.png" alt="logo almundo">
+                </a>
+                <a class="red"
+                    href="https://www.booking.com/searchresults.es.html?aid=311839&label=south-beach-san-bernardo-bDoukL4LULwqdAjgX32xQgS479913978653%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-337335118266%3Alp1000021%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txiCD_GKCoqnfQ&sid=2aa8042be9a9461fa468fcbe835982ca&city=-1011924&expand_sb=1&group_adults=2&group_children=0&highlighted_hotels=2168393&hlrd=no_dates&keep_landing=1&no_rooms=1&redirected=1&source=hotel&srpvid=76b485d1e3ba00f8&room1=A,A,;#hotelTmpl"
+                    target="_blank">
+                    <img src="../resources/booking.png" alt="logo booking">
+                </a>
+            </div>
+            <p>Gral. Lavalle 3577 (B7111)</p>
+            <p>San Bernardo, Argentina</p>
+            <div class="footer-logo"></div>
+            <p>©2022 - SOUTH BEACH HOTEL</p>
+            <p id="disclaimer">
+                Todos los precios, ofertas y disponibilidades presentados en nuestro sitio están sujetos a cambios sin
+                previo aviso
+            </p>
+        </div>
+        <div class="credits">
+            <p>Powered by <a href="">ARTIFICIAL</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
