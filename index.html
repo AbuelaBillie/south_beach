@@ -5,19 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/nav-menu.js"></script>
     <script src="./scripts/roomSlider.js"></script>
+    <script src="./scripts/bookRoom.js"></script>
     <title>South Beach Hotel</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav-bar">
-            <div>
-                <a class="logo" href=""><img src="./resources/logo.png" alt="logo south beach"></a>
-            </div>
-            <img class="burger" src="./resources/burguer-menu.png" alt="menu">
-        </nav>
+        <div class="navBar">
+            <a href="./index.html"> <img class="logo" src="./resources/logo.png" alt="Logo South Beach" /></a>
+            <span id="btnMenu"><img class="burger" src="./resources/burguer-menu.png" alt="menu"> </span>
+          </div>
+    
+          <nav class="nav">
+            <ul class="navMenu">
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./index.html#anchor-rooms">Habitaciones</a></li>
+              <li><a href="./pages/reservas.html">Reservas</a></li>
+              <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
     </header>
     <main>
         <div class="hero">
@@ -36,6 +46,7 @@
                 78
                 habitaciones conformadas por dobles y triples, habitaciones especiales y suites con vista al mar.</p>
             <p>Un concepto diferente en hotelería exclusivamente pensado para viajeros excepcionales.</p>
+            <div id="anchor-rooms"></div>
         </div>
         <div class="cards">
             <div class="card-container">
@@ -48,7 +59,7 @@
                     <h3>doble standar con vista al jardín</h3>
                     <p>Desde $8,000 por noche</p>
                     <p>Capacidad para 2 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book1">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-1" class="card-img">
@@ -58,7 +69,7 @@
                     <h3>doble standar con vista al mar</h3>
                     <p>Desde $9,000 por noche</p>
                     <p>Capacidad para 2 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book2">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-2" class="card-img">
@@ -68,7 +79,7 @@
                     <h3>doble especial con balcón al mar</h3>
                     <p>Desde $10,500 por noche</p>
                     <p>Capacidad para 2 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book3">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-3" class="card-img">
@@ -78,7 +89,7 @@
                     <h3>Triple matrimonial con vista al jardín</h3>
                     <p>Desde $13,000 por noche</p>
                     <p>Capacidad para 3 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book4">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-4" class="card-img">
@@ -88,7 +99,7 @@
                     <h3>Triple camas individuales</h3>
                     <p>Desde $13,000 por noche</p>
                     <p>Capacidad para 3 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book5">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-5" class="card-img">
@@ -98,7 +109,7 @@
                     <h3>Suite especial</h3>
                     <p>Desde $15,000 por noche</p>
                     <p>Capacidad para 4 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book6">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-6" class="card-img">
@@ -108,7 +119,7 @@
                     <h3>Combinada cuádruple con vista al jardín</h3>
                     <p>Desde $15,000 por noche</p>
                     <p>Capacidad para 5 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book7">Reservar</a>
                 </div>
                 <div class="card">
                     <div id="camas-7" class="card-img">
@@ -118,7 +129,7 @@
                     <h3>Combinada cuádruple con vista al mar</h3>
                     <p>Desde $16,500 por noche</p>
                     <p>Capacidad para 5 personas</p>
-                    <a href="">Reservar</a>
+                    <a href="./pages/reservas.html" id="book8">Reservar</a>
                 </div>
             </div>
         </div>

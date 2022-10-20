@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/reservas.css">
+    <script src="../scripts/nav-menu.js"></script>
+    <script src="../scripts/selectedRoom.js"></script>
+    <script src="../scripts/minDate.js"></script>
     <script src="../scripts/sendBooking.js"></script>
     <title>South Beach Hotel - Reservas</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav-bar">
-            <div>
-                <a class="logo" href=""><img src="../resources/logo.png" alt="logo south beach"></a>
-            </div>
-            <img class="burger" src="../resources/burguer-menu.png" alt="menu">
-        </nav>
+        <div class="navBar">
+            <a href="../index.html"> <img class="logo" src="../resources/logo.png" alt="Logo South Beach" /></a>
+            <span id="btnMenu"><img class="burger" src="../resources/burguer-menu.png" alt="menu"> </span>
+          </div>
+    
+          <nav class="nav">
+            <ul class="navMenu">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#anchor-rooms">Habitaciones</a></li>
+              <li><a href="../pages/reservas.html">Reservas</a></li>
+              <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
     </header>
 
     <main>
@@ -69,9 +79,9 @@
                     <option value="8">Combinada Cuádruple Mar</option>
                 </select>
                 <label for="check-in-date">Fecha de llegada</label>
-                <input type="date" name="check-in-date" id="check-in-date" required>
+                <input type="date" name="check-in-date" id="check-in-date" min="" required>
                 <label for="check-out-date">Fecha de partida</label>
-                <input type="date" name="check-out-date" id="check-out-date" required>
+                <input type="date" name="check-out-date" id="check-out-date" min="" required>
                 <label for="comments">Comentarios</label>
                 <textarea name="comments" id="comments" cols="30" rows="10">Escriba aquí sus comentarios...</textarea>
                 <div class="btn-container">
