@@ -29,14 +29,14 @@ window.addEventListener("load", function () {
 
     
     //ARRAYS IMAGENES
-    const arrayImagenes0 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes1 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes2 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes3 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes4 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes5 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes6 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
-    const arrayImagenes7 = ["camas-2.jpg", "camas-1.jpg", "camas-5.jpg"];
+    const arrayImagenes0 = ["camas-2.jpg", "doble1.jpg", "doble2.jpg","doble3.jpg","doble4.jpg"];
+    const arrayImagenes1 = ["camas-2.jpg", "doble1.jpg", "doble2.jpg","doble3.jpg","doble4.jpg"];
+    const arrayImagenes2 = ["camas-5.jpg", "especial1.jpg", "especial2.jpg","especial3.jpg"];
+    const arrayImagenes3 = ["camas-1.jpg", "triple1.jpg", "triple2.jpg", "triple3.jpg"];
+    const arrayImagenes4 = ["camas-3.jpg", "tripleind1.jpg", "tripleind2.jpg","tripleind3.jpg","triple3.jpg"];
+    const arrayImagenes5 = ["camas-6.jpg", "suite1.jpg", "suite2.jpg", "suite3.jpg", "suite4.jpg", "suite5.jpg", "suite6.jpg", "suite7.jpg", "suite8.jpg", "suite9.jpg"];
+    const arrayImagenes6 = ["camas-4.jpg", "cuadruple1.jpg", "cuadruple2.jpg", "cuadruple3.jpg", "cuadruple4.jpg"];
+    const arrayImagenes7 = ["camas-4.jpg", "cuadruple1.jpg", "cuadruple2.jpg", "cuadruple3.jpg", "cuadruple4.jpg"];
     
     let cont_imagen = [0,0,0,0,0,0,0,0]
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/reservas.css">
-    <script src="../scripts/roomSlider.js"></script>
+    <script src="../scripts/sendBooking.js"></script>
     <title>South Beach Hotel - Reservas</title>
 </head>
 
@@ -21,135 +21,83 @@
         </nav>
     </header>
 
-    <body>
+    <main>
         <div class="info">
             <h2>RESERVA DE HABITACIÓN</h2>
-            <h3>completa el fomulario</h3>
-            <form class="booking-form">
+            <h3>consultar disponibilidad</h3>
+            <form class="booking-form" id="booking-form">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
                 <label for="surname">Apellido</label>
-                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido">
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido" required>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico">
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
                 <label for="tel">Teléfono</label>
-                <input type="tel" name="tel" id="tel" placeholder="Ingrese su número de teléfono">
+                <input type="tel" name="tel" id="tel" placeholder="Ingrese su número de teléfono" required>
                 <div class="doble-select">
-                    <div class="select-pack">
+                    <div class="select-pack" id="select-exept1">
                         <label for="cant_adulto">Adultos</label>
                         <select name="cant_adulto" id="cant_adulto">
-                            <option value="0">0</option>
                             <option value="1" selected>1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
-                    <div class="select-pack">
+                    <div class="select-pack" id="select-exept2">
                         <label for="cant_kids">Niños</label>
                         <select name="cant_kids" id="cant_kids">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                     </div>
                 </div>
                 <label for="room">Habitación</label>
                 <select name="room" id="room">
-                    <option value="1">Habitacion 1</option>
-                    <option value="2">Habitacion 2</option>
+                    <option value="0">Aún no lo decido</option>
+                    <option value="1">Doble Standar Jardín</option>
+                    <option value="2">Doble Standar Mar</option>
+                    <option value="3">Doble Especial Mar</option>
+                    <option value="4">Triple Matrimonial Jardín</option>
+                    <option value="5">Triple Camas Individuales</option>
+                    <option value="6">Suite Especial</option>
+                    <option value="7">Combinada Cuádruple Jardín</option>
+                    <option value="8">Combinada Cuádruple Mar</option>
                 </select>
                 <label for="check-in-date">Fecha de llegada</label>
-                <input type="date" name="check-in-date" id="check-in-date">
+                <input type="date" name="check-in-date" id="check-in-date" required>
                 <label for="check-out-date">Fecha de partida</label>
-                <input type="date" name="check-out-date" id="check-out-date">
+                <input type="date" name="check-out-date" id="check-out-date" required>
                 <label for="comments">Comentarios</label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="10">Escriba aquí sus comentarios...</textarea>
+                <div class="btn-container">
+                    <button type="submit" id="btn-enviar">
+                        Enviar
+                    </button>
+                    <span class="loader oculto"></span>
+                </div>
             </form>
         </div>
-        <div class="cards">
-            <div class="card-container">
-                <div class="card">
-                    <div id="camas-0" class="card-img">
-                        <button id="left-btn-0" class="arrow-left" type="button"></button>
-                        <button id="right-btn-0" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>doble standar con vista al jardín</h3>
-                    <p>Desde $8,000 por noche</p>
-                    <p>Capacidad para 2 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-1" class="card-img">
-                        <button id="left-btn-1" class="arrow-left" type="button"></button>
-                        <button id="right-btn-1" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>doble standar con vista al mar</h3>
-                    <p>Desde $9,000 por noche</p>
-                    <p>Capacidad para 2 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-2" class="card-img">
-                        <button id="left-btn-2" class="arrow-left" type="button"></button>
-                        <button id="right-btn-2" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>doble especial con balcón al mar</h3>
-                    <p>Desde $10,500 por noche</p>
-                    <p>Capacidad para 2 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-3" class="card-img">
-                        <button id="left-btn-3" class="arrow-left" type="button"></button>
-                        <button id="right-btn-3" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>Triple matrimonial con vista al jardín</h3>
-                    <p>Desde $13,000 por noche</p>
-                    <p>Capacidad para 3 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-4" class="card-img">
-                        <button id="left-btn-4" class="arrow-left" type="button"></button>
-                        <button id="right-btn-4" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>Triple matrimonial camas individuales</h3>
-                    <p>Desde $13,000 por noche</p>
-                    <p>Capacidad para 3 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-5" class="card-img">
-                        <button id="left-btn-5" class="arrow-left" type="button"></button>
-                        <button id="right-btn-5" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>Suite especial</h3>
-                    <p>Desde $15,000 por noche</p>
-                    <p>Capacidad para 4 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-6" class="card-img">
-                        <button id="left-btn-6" class="arrow-left" type="button"></button>
-                        <button id="right-btn-6" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>Combinada cuádruple con vista al jardín</h3>
-                    <p>Desde $15,000 por noche</p>
-                    <p>Capacidad para 5 personas</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div class="card">
-                    <div id="camas-7" class="card-img">
-                        <button id="left-btn-7" class="arrow-left" type="button"></button>
-                        <button id="right-btn-7" class="arrow-right" type="button"></button>
-                    </div>
-                    <h3>Combinada cuádruple con vista al mar</h3>
-                    <p>Desde $16,500 por noche</p>
-                    <p>Capacidad para 5 personas</p>
-                    <a href="">Reservar</a>
-                </div>
+        <div class="contact">
+            <h3>CONTACTO</h3>
+            <div class="contact-pack">
+                <img src="../resources/phone.png" alt="icono teléfono">
+                <p>+54 2257 54-8873</p>
+            </div>
+            <div class="contact-pack">
+                <img src="../resources/email.png" alt="icono email">
+                <p>info@southbeach.com.ar <span>reservas@southbeach.com.ar</span></p>
+            </div>
+            <div class="contact-pack">
+                <img src="../resources/location.png" alt="icono ubicación">
+                <p>Gral. Lavalle 3577 <span>San Bernardo, Argentina</span></p>
             </div>
         </div>
-    </body>
+    </main>
     <footer>
         <div class="info-footer">
             <span>+54 2257 54-8873</span>
@@ -184,6 +132,7 @@
             <p>Powered by <a href="">ARTIFICIAL</a></p>
         </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
