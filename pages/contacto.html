@@ -11,7 +11,7 @@
     <script src="../scripts/selectedRoom.js"></script>
     <script src="../scripts/minDate.js"></script>
     <script src="../scripts/sendBooking.js"></script>
-    <title>South Beach Hotel - Reservas</title>
+    <title>South Beach Hotel - Contacto</title>
 </head>
 
 <body>
@@ -33,8 +33,8 @@
 
     <main class="main">
         <div class="info">
-            <h2>RESERVA DE HABITACIÓN</h2>
-            <h3>consultar disponibilidad</h3>
+            <h2>CONTACTO</h2>
+            <h3>completa el formulario</h3>
             <form class="booking-form" id="booking-form">
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
@@ -44,46 +44,8 @@
                 <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
                 <label for="tel">Teléfono</label>
                 <input type="tel" name="tel" id="tel" placeholder="Ingrese su número de teléfono" required>
-                <div class="doble-select">
-                    <div class="select-pack" id="select-exept1">
-                        <label for="cant_adulto">Adultos</label>
-                        <select name="cant_adulto" id="cant_adulto">
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div class="select-pack" id="select-exept2">
-                        <label for="cant_kids">Niños</label>
-                        <select name="cant_kids" id="cant_kids">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                </div>
-                <label for="room">Habitación</label>
-                <select name="room" id="room">
-                    <option value="0">Aún no lo decido</option>
-                    <option value="1">Doble Standar Jardín</option>
-                    <option value="2">Doble Standar Mar</option>
-                    <option value="3">Doble Especial Mar</option>
-                    <option value="4">Triple Matrimonial Jardín</option>
-                    <option value="5">Triple Camas Individuales</option>
-                    <option value="6">Suite Especial</option>
-                    <option value="7">Combinada Cuádruple Jardín</option>
-                    <option value="8">Combinada Cuádruple Mar</option>
-                </select>
-                <label for="check-in-date">Fecha de llegada</label>
-                <input type="date" name="check-in-date" id="check-in-date" min="" required>
-                <label for="check-out-date">Fecha de partida</label>
-                <input type="date" name="check-out-date" id="check-out-date" min="" required>
-                <label for="comments">Comentarios</label>
-                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Escriba aquí sus comentarios..."></textarea>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Escriba aquí su mensaje..."></textarea>
                 <div class="btn-container">
                     <button type="submit" id="btn-enviar">
                         Enviar
