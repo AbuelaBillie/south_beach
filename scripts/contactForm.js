@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
       loader.classList.remove("oculto");
   
       // HACEMOS PETICION A LA API
-      fetch("./scripts/mailReserva.php", {
+      fetch("./scripts/mailContacto.php", {
         method: "POST",
         body: datos,
       })
