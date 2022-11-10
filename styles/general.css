@@ -143,3 +143,111 @@ footer {
 }
 
 /*END FOOTER*/
+
+/*RESPONSIVE PC*/
+@media screen and (min-width: 1280px) {
+    /*HEADER*/
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(3, 3, 3, .6);
+    }
+    .navBar{
+      margin-left: 1rem;
+      background-color: transparent;
+    }
+    #btnMenu {
+      display: none;
+    }
+    .navMenu {
+      position: inherit;
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      margin-right: 3rem;
+    }
+    .navMenu li a{
+      color: var(--white);
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    .navMenu li a:hover{
+      color: var(--primary-color);
+    }
+    /*END HEADER*/
+    
+    /*FOOTER*/
+    footer {
+        background-color: var(--black);
+    }
+    
+    .info-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info-footer span,
+    .info-footer a {
+        color: var(--white);
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .info-footer span {
+        margin: 1rem auto .5rem auto;
+        font-size: 1.8rem;
+    }
+    
+    .info-footer a {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .red img {
+        height: 3rem;
+        padding: .3rem;
+        margin: auto .2rem;
+    }
+    
+    .info-footer p {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    
+    .footer-logo {
+        background-image: url("../resources/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 7rem;
+        width: 10rem;
+        margin: 1rem auto;
+    }
+    
+    #disclaimer {
+        text-transform: lowercase;
+        font-size: .7rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .credits {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .credits a {
+        color: var(--text);
+        font-family: 'Poppins', sans-serif;
+    }
+    /*END FOOTER*/
+  }
+  /*FIN RESPONSIVE PC*/
+  

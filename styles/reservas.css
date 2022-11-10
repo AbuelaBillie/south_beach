@@ -188,3 +188,30 @@
 }
 
 /*END SWEET ALERT*/
+
+/*RESPONSIVE PC*/
+@media screen and (min-width: 1280px) {
+
+    /*INFO*/
+    .info {
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+
+    /*END INFO*/
+
+    /*CONTACTO*/
+    .contact {
+        padding-left: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-info{
+        margin-right: 3rem;
+    }
+    /*END CONTACTO*/
+
+}
+
+/*FIN RESPONSIVE PC*/
